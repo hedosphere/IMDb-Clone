@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Home() {
-  return <div className="">ghome of all</div>;
+  return <div className="">home of al2l</div>;
 }
