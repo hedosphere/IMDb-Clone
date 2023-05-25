@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { type } from "os";
+
 import React from "react";
 
 type MenuType = {
