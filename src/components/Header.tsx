@@ -6,8 +6,9 @@ import ColorMode from "./ColorMode";
 
 export const Header = () => {
   return (
-    <div className="max-w-[90vw] mx-auto py-3  select-none">
-      <div className=" items-center flex justify-between gap-4">
+    <div className=" py-3  select-none  ">
+      {/* <div className=" py-3  select-none border-b border-gray-700  border-opacity-10 dark:border-white  "> */}
+      <div className="max-w-[90vw] mx-auto items-center flex justify-between gap-4">
         <div className="flex gap-6">
           <MenuItem Icon={AiTwotoneHome} address="/" title="HOME" />
           <MenuItem
