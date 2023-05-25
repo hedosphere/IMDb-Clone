@@ -1,23 +1,33 @@
-import React from "react";
 import MenuItem from "./MenuItem";
 import { AiTwotoneHome } from "react-icons/ai";
 import { BsFillInfoCircleFill } from "react-icons/bs";
-import { MdLightMode } from "react-icons/md";
+import ColorMode from "./ColorMode";
 //
 
 export const Header = () => {
   return (
-    <div className="m-4 flex justify-between">
-      <div className="flex gap-2">
-        <MenuItem Icon={AiTwotoneHome} address="/" title="HOME" />
-        <MenuItem Icon={BsFillInfoCircleFill} address="/about" title="ABOUt" />
-      </div>
-      {/*  */}
-      <div className="flex gap-4">
-        <div className=" cursor-pointer ">
-          <MdLightMode className="text-white2 " />
+    <div className="max-w-[90vw] mx-auto py-3  select-none">
+      <div className=" items-center flex justify-between gap-4">
+        <div className="flex gap-6">
+          <MenuItem Icon={AiTwotoneHome} address="/" title="HOME" />
+          <MenuItem
+            Icon={BsFillInfoCircleFill}
+            address="/about"
+            title="ABOUt"
+          />
         </div>
-        <div>IMDb Clone</div>
+        {/*  */}
+        <div className="flex items-center gap-4">
+          <>
+            <ColorMode />
+          </>
+          <div>
+            <span className="bg-amber-500 rounded-lg p-1  mr-1 text-2xl">
+              IMDb
+            </span>
+            <span className="hidden sm:inline text-whitex">Clone</span>
+          </div>
+        </div>
       </div>
     </div>
   );

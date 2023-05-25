@@ -10,9 +10,9 @@ type MenuType = {
 
 const MenuItem = ({ address, title, Icon }: MenuType) => {
   return (
-    <div className="  text-2xl ">
-      <Link href={address} className="hover:text-yellow-600">
-        <div className="text-5xl sm:hidden ">
+    <div className="  text-xl ">
+      <Link href={address} className="hover:text-amber-500">
+        <div className="text-4xl sm:hidden ">
           <Icon />
         </div>
         <div className=" uppercase hidden sm:inline ">{title}</div>
