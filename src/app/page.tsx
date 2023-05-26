@@ -1,3 +1,5 @@
+import MoviesCard from "@/components/MoviesCard";
+
 const TMDB_API_KEY = process.env.TMDB_API_KEY;
 
 export default async function Home({ searchParams }: any) {
@@ -15,11 +17,8 @@ export default async function Home({ searchParams }: any) {
   // console.log(data.results);
   return (
     <div className="">
-      God abeg
-      {data &&
-        data.results.map((item: any) => (
-          <div key={item.id}>{item.original_title}</div>
-        ))}
+      <MoviesCard MovieList={data.results} />
+
       {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
     </div>
   );
