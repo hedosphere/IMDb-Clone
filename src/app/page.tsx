@@ -10,12 +10,13 @@ export default async function Home({ searchParams }: any) {
   let res = await fetch(TMDBurl, { next: { revalidate: 21400 } });
 
   // console.log(res.ok);original_title
-  if (!res.ok) throw new Error("Fail to load new movies");
+  // if (!res.ok) throw new Error("Fail to load new movies");
 
   let data = await res.json();
   console.log(data.results);
   return (
     <div className="">
+      God abeg
       {data &&
         data.results.map((item: any) => (
           <div key={item.id}>{item.original_title}</div>
