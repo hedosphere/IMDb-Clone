@@ -1,4 +1,4 @@
-import MoviesCard from "@/components/MoviesCard";
+import MoviesCard from "@/components/Movies";
 
 const TMDB_API_KEY = process.env.TMDB_API_KEY;
 
