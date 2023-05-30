@@ -3,11 +3,11 @@ import React from "react";
 
 const loading = () => {
   return (
-    <div className="h-[60vh] w-full flex items-center justify-center bg-transparent ">
+    <div className=" mt-2  w-full flex  justify-center bg-transparent ">
       <Image
         src={"/Loading_Spinner.svg"}
-        height={500}
-        width={500}
+        height={300}
+        width={300}
         alt="Loading..."
       />
     </div>
