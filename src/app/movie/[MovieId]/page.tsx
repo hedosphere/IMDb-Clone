@@ -1,4 +1,5 @@
 // import MoviesCard from "@/components/Movies";
+import { AiOutlineSync } from "react-icons/ai";
 
 import Image from "next/image";
 
@@ -18,7 +19,7 @@ export default async function Home({ params }: any) {
   return (
     <div className="w-full ">
       {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
-
+     
       
         <div className="p-4 md:p-8 max-w-[90vw] mx-auto grid grid-rows md:grid-cols-2 gap-4  align-middle ">
           <div className="">
@@ -40,28 +41,33 @@ export default async function Home({ params }: any) {
             />
           </div>
           <div className=" pb-4 ">
-            <h1 className="mb-3 font-semibold text-black">
+            <h1 className="mb-3 font-bold  dark:text-white text-black">
               {data.original_title}
             </h1>
             <p className="mb-2">
-              <span className=" font-semibold text-black mr-2">OverView:</span>
-              {data.overview}
+              <span className=" font-bold  dark:text-white text-black mr-2">
+                OverView:
+              </span>
+              <span className="dark:opacity-75">{data.overview}</span>
             </p>
 
             <p className="mb-2">
-              <span className=" font-semibold text-black mr-2">
+              <span className=" font-bold  dark:text-white text-black mr-2">
                 Date Released:
               </span>
-              {data.release_date}
+              <span className="dark:opacity-75">{data.release_date}</span>
             </p>
 
             <p className="mb-2">
-              <span className=" font-semibold text-black mr-2">Rating:</span>
-              {data.vote_count}
+              <span className=" font-bold  dark:text-white text-black mr-2">
+                Rating:
+              </span>
+              <span className="dark:opacity-75">{data.vote_count}</span>
             </p>
           </div>
         </div>
     
+      
     </div>
   );
 }
