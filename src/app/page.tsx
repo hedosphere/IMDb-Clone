@@ -10,7 +10,7 @@ export default async function Home({ searchParams }: any) {
     genre == "fetchTopRated" ? "top_rated" : "popular"
   }?api_key=${TMDB_API_KEY}&language=en-US&page=1`;
 
-  let res = await fetch(TMDBurl, { next: { revalidate: 1 } });
+  let res = await fetch(TMDBurl, { next: { revalidate: 10000 } });
 
   if (!res.ok) throw new Error("Fail to load new movies");
 
