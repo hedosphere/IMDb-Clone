@@ -1,4 +1,4 @@
-import MoviesCard from "@/components/MoviesCard";
+import MoviesCard from "@/components/Movies";
 
 const TMDB_API_KEY = process.env.TMDB_API_KEY;
 
@@ -11,7 +11,7 @@ export default async function Home({ searchParams }: any) {
 
   let res = await fetch(TMDBurl, { next: { revalidate: 21400 } });
 
-  // if (!res.ok) throw new Error("Fail to load new movies");
+  if (!res.ok) throw new Error("Fail to load new movies");
 
   let data = await res.json();
   // console.log(data.results);
