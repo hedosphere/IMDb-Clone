@@ -35,5 +35,15 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 https://developer.themoviedb.org/reference/movie-popular-list
 ```
 
+tmdbLoadImg= https://image.tmdb.org/t/p/w600_and_h900_bestv2/3bhkrj58Vtu7enYsRolD1fZdja1.jpg
+or
+https://image.tmdb.org/t/p/original/3bhkrj58Vtu7enYsRolD1fZdja1.jpg
+
+tmdbLoadImg= https://image.tmdb.org/t/p/w600_and_h900_bestv2/ backdrop_path or poster_path
+or
+https://image.tmdb.org/t/p/original/ backdrop_path or poster_path
+
 const url = 'https://api.themoviedb.org/3/movie/popular?language=en-US&page=1';
 const url = 'https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1';
+
+## TMDB Database
