@@ -45,5 +45,6 @@ https://image.tmdb.org/t/p/original/ backdrop_path or poster_path
 
 const url = 'https://api.themoviedb.org/3/movie/popular?language=en-US&page=1';
 const url = 'https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1';
+const url = 'https://api.themoviedb.org/3/movie/id';
 
 ## TMDB Database
