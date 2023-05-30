@@ -6,13 +6,16 @@ type moviesType = {
 };
 const MoviesCard = ({ MovieList }: moviesType) => {
   return (
-    <div className="sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5">
-      {MovieList.map((movie: any) => (
-        <div key={movie.id}>
-          <MovieCard movie={movie} />
-        </div>
-      ))}
-    </div>
+    <>
+      {/* <pre>{JSON.stringify(MovieList, null, 4)}</pre> */}
+      <div className=" max-w-[90vw] mx-auto sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-3">
+        {MovieList.map((movie: any) => (
+          <div key={movie.id}>
+            <MovieCard movie={movie} />
+          </div>
+        ))}
+      </div>
+    </>
   );
 };
 
