@@ -9,7 +9,8 @@ type moviesType = {
 const MoviesCard = ({ MovieList, SearchResult, params }: moviesType) => {
   // let reg = /%20/gi;
 
-  let param = params && params.replace(/%20/gi, " ");
+  let param = "";
+  if (params) param = params.replace(/%20/gi, " ");
 
   return (
     <div className="max-w-[90vw] mx-auto ">
