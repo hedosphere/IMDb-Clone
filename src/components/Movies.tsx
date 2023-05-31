@@ -20,7 +20,7 @@ const MoviesCard = ({ MovieList, SearchResult, params }: moviesType) => {
           <p>
             Movies with
             <span className=" mx-1 font-bold underline underline-offset-4 ">
-              "{params && params.replace(/%20/gi, " ")}"
+              "{params}" "{/* {params && params.replace(/%20/gi, " ")}" */}
             </span>
             Keywords
           </p>
