@@ -1,6 +1,5 @@
 import React from "react";
 import MovieCard from "./MovieCard";
-// import SearchResultView from "./SearchResultView";
 
 type moviesType = {
   MovieList: any;
@@ -17,8 +16,6 @@ const MoviesCard = ({ MovieList, SearchResult, params }: moviesType) => {
     <div className="max-w-[90vw] mx-auto ">
       {/* <pre>{JSON.stringify(MovieList, null, 4)}</pre> */}
       <div className="my-3 text-amber-500 text-lg">
-        {/* <SearchResultView SearchResult={SearchResult} params={params} /> */}
-
         {SearchResult && params && (
           <p>
             Movies with
