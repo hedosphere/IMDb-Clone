@@ -15,17 +15,17 @@ const MoviesCard = ({ MovieList, SearchResult, params }: moviesType) => {
   return (
     <div className="max-w-[90vw] mx-auto ">
       {/* <pre>{JSON.stringify(MovieList, null, 4)}</pre> */}
-      <div className="my-3 text-amber-500 text-lg">
+      {/* <div className="my-3 text-amber-500 text-lg">
         {SearchResult && params && (
           <p>
             Movies with
             <span className=" mx-1 font-bold underline underline-offset-4 ">
-              "{params}"
+              "{params && params}"
             </span>
             Keywords
           </p>
         )}
-      </div>
+      </div> */}
       <div className=" sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-3">
         {MovieList.map((movie: any) => (
           <div key={movie.id}>
