@@ -19,7 +19,7 @@ const MovieCard = ({ movie }: any) => {
           alt={movie.original_title}
           className=" rounded-t-lg dark:group-hover:opacity-50 group-hover:opacity-70"
           style={{
-            height: "auto",
+            maxHeight: "150px",
             width: "100%",
           }}
         />
