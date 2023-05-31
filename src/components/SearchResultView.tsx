@@ -7,7 +7,7 @@ const SearchResult = ({ SearchResult, params }: any) => {
         <p>
           Movies with
           <span className=" mx-1 font-bold underline underline-offset-4 ">
-            "{params}"{/* "{params.replace(/%20/gi, " ")}" */}
+            "{params}"
           </span>
           Keywords
         </p>
