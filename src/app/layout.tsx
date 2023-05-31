@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 import MyThemeProvider from "./MyThemeProvider";
 import Navbar from "@/components/Navbar";
 import Search from "@/components/Search";
-import "react-responsive-pagination/themes/classic.css";
+// import "react-responsive-pagination/themes/classic.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
