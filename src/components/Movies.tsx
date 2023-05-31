@@ -7,20 +7,20 @@ type moviesType = {
   params?: any;
 };
 const MoviesCard = ({ MovieList, SearchResult, params }: moviesType) => {
-  let reg = /%20/gi;
+  // let reg = /%20/gi;
 
-  let param = "";
-  if (params) param = params.replace(reg, " ");
+  // let param = "";
+  // if (params) param = params.replace(/%20/gi, " ");
 
   return (
     <div className="max-w-[90vw] mx-auto ">
       {/* <pre>{JSON.stringify(MovieList, null, 4)}</pre> */}
       <div className="my-3 text-amber-500 text-lg">
-        {SearchResult && params && param && (
+        {SearchResult && params && (
           <p>
             Movies with
             <span className=" mx-1 font-bold underline underline-offset-4 ">
-              "{param}"
+              "{params.replace(/%20/gi, " ")}"
             </span>
             Keywords
           </p>

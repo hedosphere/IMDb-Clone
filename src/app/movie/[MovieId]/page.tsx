@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const TMDB_API_KEY = process.env.TMDB_API_KEY;
 
-export default async function MoviwPage({ params }: any) {
+export default async function MoviePage({ params }: any) {
   const { MovieId } = params;
 
   const TMDBurl = `https://api.themoviedb.org/3/movie/${MovieId}?api_key=${TMDB_API_KEY}`;
