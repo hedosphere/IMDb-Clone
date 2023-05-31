@@ -15,10 +15,9 @@ export default async function Home({ searchParams }: any) {
   if (!res.ok) throw new Error("Fail to load new movies");
 
   let data = await res.json();
-  // console.log(data.results);
   return (
     <div className="">
-      <MoviesCard MovieList={data.results} />
+      <MoviesCard SearchResult={false} MovieList={data.results} />
 
       {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
     </div>
