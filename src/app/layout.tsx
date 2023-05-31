@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import MyThemeProvider from "./MyThemeProvider";
 import Navbar from "@/components/Navbar";
 import Search from "@/components/Search";
+// import "react-responsive-pagination/themes/classic.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={` ${inter.className}`}>
+      <body className={` ${inter.className}  `}>
         <MyThemeProvider>
           <Header />
           {/*  header nav*/}

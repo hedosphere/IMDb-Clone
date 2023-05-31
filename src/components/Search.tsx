@@ -15,6 +15,7 @@ const Search = () => {
     if (search) {
       router.push(`/search/${search}`);
       //
+      setSearch("");
     }
   };
   return (

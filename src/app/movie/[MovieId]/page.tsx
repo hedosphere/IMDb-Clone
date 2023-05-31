@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const TMDB_API_KEY = process.env.TMDB_API_KEY;
 
-export default async function Home({ params }: any) {
+export default async function MoviePage({ params }: any) {
   const { MovieId } = params;
 
   const TMDBurl = `https://api.themoviedb.org/3/movie/${MovieId}?api_key=${TMDB_API_KEY}`;
@@ -34,7 +34,7 @@ export default async function Home({ params }: any) {
             alt={movie.title || movie.original_title}
             className=" rounded-lg "
             style={{
-              // maxHeight: "1000px",
+              maxHeight: "400px",
               width: "100%",
               height: "100%",
             }}

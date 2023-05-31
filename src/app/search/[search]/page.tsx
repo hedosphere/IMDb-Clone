@@ -22,7 +22,11 @@ const page = async ({ params }: any) => {
           No result found
         </h1>
       ) : (
-        <MoviesCard MovieList={movie.results} />
+        <MoviesCard
+          SearchResult={true}
+          params={params.search}
+          MovieList={movie.results}
+        />
       )}
     </div>
   );
